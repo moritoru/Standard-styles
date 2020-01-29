@@ -11,8 +11,11 @@ Anyone who want to use them by using style url, please send email to moritoru@cu
 #### Zoom 15
 <img width="1207" alt="スクリーンショット 2020-01-01 15 10 26" src="https://user-images.githubusercontent.com/55660712/71638658-fc76e680-2ca8-11ea-94e8-9cb02a548986.png">  
 
-#### Zoom 17
-<img width="1206" alt="スクリーンショット 2020-01-01 15 14 23" src="https://user-images.githubusercontent.com/55660712/71638669-71e2b700-2ca9-11ea-854f-9da191861bdf.png">  
+#### Zoom 16
+<img width="1191" alt="スクリーンショット 2020-01-29 16 04 35" src="https://user-images.githubusercontent.com/55660712/73334953-6804a180-42b1-11ea-8a61-86cef34bf2db.png">
+
+#### 3D view in Shinjyuku
+
 
 ## Gray - display samples
 #### Coming shortly
