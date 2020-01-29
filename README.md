@@ -1,8 +1,15 @@
+
+
 # Standard-styles
 Standard map styles for background map display.  
 
-All styles here are desinged for Mapbox GL JS specifications. Styles are created based on Mapbox Streets vector tile set and you need to follow the license term provided by Mapbox in the license.txt.  
-Anyone who want to use them by using style url, please send email to moritoru@cunemo.com
+All styles here are desinged upon Mapbox GL JS specifications. Styles are created for Mapbox Streets vector tile set and you need to follow the license term provided by Mapbox in the license.txt.  
+Anybody who wants to use them by using style url, please send email to moritoru@cunemo.com
+
+## Update History
+- Jan. 29 2020
+  - Added 3D building extrusion in high zoom levels.
+  - Modified POI lavel tex field in order to avoid double labeling in some conutries.
 
 ## Standard - display samples
 #### Zoom12
