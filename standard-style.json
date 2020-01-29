@@ -4041,6 +4041,24 @@
             }
         },
         {
+            "id": "building-extrusion",
+            "type": "fill-extrusion",
+            "source": "composite",
+            "source-layer": "building",
+            "minzoom": 15,
+            "filter": [
+                "all",
+                ["==", ["get", "underground"], "false"],
+                ["!=", ["get", "extrude"], "false"]
+            ],
+            "layout": {},
+            "paint": {
+                "fill-extrusion-color": "hsl(0, 0%, 95%)",
+                "fill-extrusion-height": ["get", "height"],
+                "fill-extrusion-opacity": 0.2
+            }
+        },
+        {
             "id": "admin-1-boundary-bg",
             "type": "line",
             "metadata": {"mapbox:group": "1444934295202.7542"},
@@ -6025,8 +6043,8 @@
     ],
     "created": "2019-12-30T08:37:26.287Z",
     "id": "ck4s6w8bd0sb51cpp9vn7ztty",
-    "modified": "2020-01-01T05:35:31.327Z",
+    "modified": "2020-01-24T07:04:23.329Z",
     "owner": "moritoru",
-    "visibility": "private",
+    "visibility": "public",
     "draft": false
 }
