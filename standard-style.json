@@ -1,6 +1,6 @@
 {
     "version": 8,
-    "name": "Streets-JP/EN_20Jan",
+    "name": "Streets-JP/EN_Aug2020",
     "metadata": {
         "mapbox:type": "default",
         "mapbox:origin": "streets-v11",
@@ -11,7 +11,7 @@
                 "name": "Admin boundaries",
                 "collapsed": true
             },
-            "1444855799204.86": {"name": "Bridges", "collapsed": false},
+            "1444855799204.86": {"name": "Bridges", "collapsed": true},
             "1444855769305.6016": {"name": "Tunnels", "collapsed": false}
         },
         "mapbox:sdk-support": {
@@ -44,10 +44,10 @@
                     "interpolate",
                     ["linear"],
                     ["zoom"],
-                    8,
-                    "hsl(29, 0%, 97%)",
-                    15,
-                    "#f8f8f8"
+                    7,
+                    "#fffbf6",
+                    14,
+                    "#fafaff"
                 ]
             }
         },
@@ -185,7 +185,7 @@
                     ["match", ["get", "class"], ["parking"], true, false],
                     "hsl(229, 40%, 96%)",
                     ["match", ["get", "class"], ["wood"], true, false],
-                    "hsl(105, 51%, 81%)",
+                    "#c2e7b6",
                     "hsla(0, 0%, 0%, 0)"
                 ],
                 "fill-opacity": [
@@ -2281,7 +2281,16 @@
                     20,
                     8
                 ],
-                "line-opacity": 0
+                "line-opacity": 0,
+                "line-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsl(0, 0%, 0%)",
+                    22,
+                    "hsl(0, 0%, 0%)"
+                ]
             }
         },
         {
@@ -3622,7 +3631,7 @@
             "paint": {
                 "fill-color": [
                     "interpolate",
-                    ["exponential", 1],
+                    ["exponential", 1.5],
                     ["zoom"],
                     0,
                     "hsl(35, 0%, 100%)",
@@ -3707,7 +3716,7 @@
             "paint": {
                 "fill-color": [
                     "interpolate",
-                    ["exponential", 1],
+                    ["exponential", 1.5],
                     ["zoom"],
                     0,
                     "hsl(35, 0%, 100%)",
@@ -3869,7 +3878,9 @@
                         "monorail",
                         "subway",
                         "tram",
-                        "funicular"
+                        "funicular",
+                        "jr",
+                        "private_railway"
                     ],
                     true,
                     false
@@ -3892,6 +3903,8 @@
                             false
                         ],
                         "#dbdbdb",
+                        ["==", ["get", "structure"], ""],
+                        "hsl(0, 0%, 50%)",
                         "#808080"
                     ],
                     13,
@@ -4045,7 +4058,7 @@
             "type": "fill-extrusion",
             "source": "composite",
             "source-layer": "building",
-            "minzoom": 15,
+            "minzoom": 14,
             "filter": [
                 "all",
                 ["==", ["get", "underground"], "false"],
@@ -4053,9 +4066,55 @@
             ],
             "layout": {},
             "paint": {
-                "fill-extrusion-color": "hsl(0, 0%, 95%)",
+                "fill-extrusion-color": [
+                    "interpolate",
+                    ["exponential", 1.5],
+                    ["zoom"],
+                    15,
+                    [
+                        "match",
+                        ["get", "type"],
+                        [
+                            "commercial",
+                            "commercial;residential",
+                            "retail",
+                            "hotel"
+                        ],
+                        "#e7d5fb",
+                        ["office", "government_office"],
+                        "hsl(0, 0%, 86%)",
+                        ["temple"],
+                        "#e3d5ab",
+                        "#f8f8f8"
+                    ],
+                    17,
+                    [
+                        "match",
+                        ["get", "type"],
+                        [
+                            "commercial",
+                            "commercial;residential",
+                            "hotel",
+                            "retail"
+                        ],
+                        "#e7d5fb",
+                        ["office", "government_office"],
+                        "#d2d2d2",
+                        ["temple"],
+                        "#e3d5ab",
+                        "hsl(0, 0%, 96%)"
+                    ]
+                ],
                 "fill-extrusion-height": ["get", "height"],
-                "fill-extrusion-opacity": 0.2
+                "fill-extrusion-opacity": [
+                    "interpolate",
+                    ["exponential", 1.5],
+                    ["zoom"],
+                    0,
+                    0,
+                    17,
+                    0.2
+                ]
             }
         },
         {
@@ -4622,10 +4681,7 @@
                     ["step", ["get", "sizerank"], 18, 13, 12]
                 ],
                 "text-max-angle": 30,
-                "text-field": [
-                    "to-string",
-                    ["concat", ["get", "name"], ["get", "name_en"]]
-                ],
+                "text-field": ["to-string", ["get", "name"]],
                 "text-font": [
                     "DIN Offc Pro Medium",
                     "Arial Unicode MS Regular"
@@ -4721,10 +4777,7 @@
                     17,
                     ["step", ["get", "sizerank"], "center", 13, "top"]
                 ],
-                "text-field": [
-                    "to-string",
-                    ["concat", ["get", "name"], ["get", "name_en"]]
-                ]
+                "text-field": ["to-string", ["get", "name"]]
             },
             "paint": {
                 "icon-opacity": [
@@ -4848,10 +4901,7 @@
                     "DIN Offc Pro Italic",
                     "Arial Unicode MS Regular"
                 ],
-                "text-field": [
-                    "to-string",
-                    ["concat", ["get", "name"], ["get", "name_en"]]
-                ],
+                "text-field": ["to-string", ["get", "name"]],
                 "text-letter-spacing": [
                     "match",
                     ["get", "class"],
@@ -5151,10 +5201,7 @@
                     17,
                     ["step", ["get", "sizerank"], "center", 13, "top"]
                 ],
-                "text-field": [
-                    "to-string",
-                    ["concat", ["get", "name"], ["get", "name_en"]]
-                ]
+                "text-field": ["to-string", ["get", "name"]]
             },
             "paint": {
                 "icon-opacity": [
@@ -6036,14 +6083,22 @@
                     "Arial Unicode MS Bold",
                     "Arial Unicode MS Regular"
                 ],
-                "text-size": ["step", ["zoom"], 14, 3, 18, 5, 22]
+                "text-size": [
+                    "interpolate",
+                    ["exponential", 1.5],
+                    ["zoom"],
+                    0,
+                    12,
+                    5,
+                    22
+                ]
             },
-            "paint": {"text-color": "hsl(0, 0%, 24%)"}
+            "paint": {"text-color": "hsl(0, 0%, 40%)"}
         }
     ],
     "created": "2019-12-30T08:37:26.287Z",
     "id": "ck4s6w8bd0sb51cpp9vn7ztty",
-    "modified": "2020-01-24T07:04:23.329Z",
+    "modified": "2020-08-18T07:12:20.793Z",
     "owner": "moritoru",
     "visibility": "public",
     "draft": false
