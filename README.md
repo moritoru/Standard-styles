@@ -7,6 +7,9 @@ All styles here are desinged upon Mapbox GL JS specifications. Styles are create
 Anybody who wants to use them by using style url, please send email to moritoru@cunemo.com
 
 ## Update History
+- Aug. 18 2020
+  - Fixed railway line display issue caused by Mapbox street data update.
+  - Improved map display by adding exponential values on some features.
 - Jan. 29 2020
   - Added 3D building extrusion in high zoom levels.
   - Modified POI lavel tex field in order to avoid double labeling in some conutries.
