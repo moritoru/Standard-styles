@@ -6,7 +6,7 @@ Standard map styles for background map display.
 All styles here are desinged upon Mapbox GL JS specifications. Styles are created for Mapbox Streets vector tile set and you need to follow the license term provided by Mapbox in the license.txt.  
 Anybody who wants to use them by using style url, please send email to moritoru@cunemo.com
 
-You can preview how the style looks like from [here](https://api.mapbox.com/styles/v1/moritoru/ck4s6w8bd0sb51cpp9vn7ztty.html?fresh=true&title=view&access_token=pk.eyJ1IjoibW9yaXRvcnUiLCJhIjoiY2sxYzBnMzU0MDhscjNqcW5rd2hxa2hwOCJ9.6gCz93_x9iLisCcCZc3T2Q)
+You can preview how the style looks like from [here](https://api.mapbox.com/styles/v1/moritoru/ck4s6w8bd0sb51cpp9vn7ztty.html?fresh=true&title=view&access_token=pk.eyJ1IjoibW9yaXRvcnUiLCJhIjoiY2sxYzBnMzU0MDhscjNqcW5rd2hxa2hwOCJ9.6gCz93_x9iLisCcCZc3T2Q).
 
 ## Update History
 - Aug. 18 2020
