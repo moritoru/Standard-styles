@@ -28,7 +28,7 @@ You can preview how the style looks like from [here](https://api.mapbox.com/styl
 <img width="961" alt="スクリーンショット 2020-08-20 15 22 40" src="https://user-images.githubusercontent.com/55660712/90724284-44f71900-e2f9-11ea-9e69-93d54136c61a.png">
 
 #### Zoom 16
-<img width="1191" alt="スクリーンショット 2020-01-29 16 04 35" src="https://user-images.githubusercontent.com/55660712/73334953-6804a180-42b1-11ea-8a61-86cef34bf2db.png">
+<img width="963" alt="スクリーンショット 2020-08-20 15 24 06" src="https://user-images.githubusercontent.com/55660712/90724304-4b859080-e2f9-11ea-9869-dce86d3f0ab7.png">
 
 #### 3D view in Shinjuku
 ![IMG_0022](https://user-images.githubusercontent.com/55660712/73335383-8a4aef00-42b2-11ea-859c-95643d8b6487.PNG)
