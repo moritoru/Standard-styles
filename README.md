@@ -22,7 +22,7 @@ You can preview how the style looks like from [here](https://api.mapbox.com/styl
 ## Standard - display samples
 
 #### Zoom12
-<img width="1209" alt="スクリーンショット 2020-01-01 15 06 47" src="https://user-images.githubusercontent.com/55660712/71638634-56c37780-2ca8-11ea-9e7c-2e05b580e457.png">  
+<img width="962" alt="スクリーンショット 2020-08-20 15 23 26" src="https://user-images.githubusercontent.com/55660712/90724777-0c0b7400-e2fa-11ea-9b0d-151d9db932ed.png">
 
 #### Zoom 15
 <img width="961" alt="スクリーンショット 2020-08-20 15 22 40" src="https://user-images.githubusercontent.com/55660712/90724284-44f71900-e2f9-11ea-9e69-93d54136c61a.png">
