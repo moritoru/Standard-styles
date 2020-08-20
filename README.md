@@ -11,7 +11,6 @@ You can preview how the style looks like from [here](https://api.mapbox.com/styl
 ## Update History
 - Aug. 20 2020
   - Added subway station polygon and intersection names.
-<img width="797" alt="スクリーンショット 2020-08-20 15 14 03" src="https://user-images.githubusercontent.com/55660712/90723828-6a375780-e2f8-11ea-85a6-d963ad522386.png">
 
 - Aug. 18 2020
   - Fixed railway line display issue caused by Mapbox street data update.
@@ -21,6 +20,7 @@ You can preview how the style looks like from [here](https://api.mapbox.com/styl
   - Modified POI lavel tex field in order to avoid double labeling in some conutries.
 
 ## Standard - display samples
+
 #### Zoom12
 <img width="1209" alt="スクリーンショット 2020-01-01 15 06 47" src="https://user-images.githubusercontent.com/55660712/71638634-56c37780-2ca8-11ea-9e7c-2e05b580e457.png">  
 
