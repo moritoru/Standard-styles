@@ -11,6 +11,8 @@ You can preview how the style looks like from [here](https://api.mapbox.com/styl
 ## Update History
 - Aug. 20 2020
   - Added subway station polygon and intersection names.
+<img width="797" alt="スクリーンショット 2020-08-20 15 14 03" src="https://user-images.githubusercontent.com/55660712/90723828-6a375780-e2f8-11ea-85a6-d963ad522386.png">
+
 - Aug. 18 2020
   - Fixed railway line display issue caused by Mapbox street data update.
   - Improved map display by adding exponential values on some features.
