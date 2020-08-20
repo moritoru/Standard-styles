@@ -9,6 +9,8 @@ Anybody who wants to use them by using style url, please send email to moritoru@
 You can preview how the style looks like from [here](https://api.mapbox.com/styles/v1/moritoru/ck4s6w8bd0sb51cpp9vn7ztty.html?fresh=true&title=view&access_token=pk.eyJ1IjoibW9yaXRvcnUiLCJhIjoiY2sxYzBnMzU0MDhscjNqcW5rd2hxa2hwOCJ9.6gCz93_x9iLisCcCZc3T2Q).
 
 ## Update History
+- Aug. 20 2020
+  - Added subway station polygon and intersection names.
 - Aug. 18 2020
   - Fixed railway line display issue caused by Mapbox street data update.
   - Improved map display by adding exponential values on some features.
